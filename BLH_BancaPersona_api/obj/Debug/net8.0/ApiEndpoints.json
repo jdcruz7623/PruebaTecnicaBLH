@@ -1,0 +1,166 @@
+[
+  {
+    "ContainingType": "BLH_BancaPersona_api.Controllers.ClienteController",
+    "Method": "CrearCliente",
+    "RelativePath": "api/Cliente",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clienteDto",
+        "Type": "BLH_BancaPersona_api.DTOs.ClienteDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BLH_BancaPersona_api.Controllers.ClienteController",
+    "Method": "ObtenerTodosClientes",
+    "RelativePath": "api/Cliente",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BLH_BancaPersona_api.Controllers.ClienteController",
+    "Method": "ObtenerClientePorId",
+    "RelativePath": "api/Cliente/{idCliente}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCliente",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BLH_BancaPersona_api.Controllers.CuentaController",
+    "Method": "CrearCuenta",
+    "RelativePath": "api/Cuenta",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cuentaDto",
+        "Type": "BLH_BancaPersona_api.DTOs.CuentaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BLH_BancaPersona_api.Controllers.CuentaController",
+    "Method": "ObtenerTodosCuentas",
+    "RelativePath": "api/Cuenta",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BLH_BancaPersona_api.Controllers.CuentaController",
+    "Method": "ObtenerCuentaPorNumCuenta",
+    "RelativePath": "api/Cuenta/{numeroCuenta}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numeroCuenta",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BLH_BancaPersona_api.Controllers.CuentaController",
+    "Method": "ObtenerSaldoActual",
+    "RelativePath": "api/Cuenta/saldo-actual/{numeroCuenta}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numeroCuenta",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BLH_BancaPersona_api.Controllers.CuentaController",
+    "Method": "RealizarDeposito",
+    "RelativePath": "api/Cuenta/transaccion/deposito",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "transaccionDto",
+        "Type": "BLH_BancaPersona_api.DTOs.TransaccionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BLH_BancaPersona_api.Controllers.CuentaController",
+    "Method": "AplicarIntereses",
+    "RelativePath": "api/Cuenta/transaccion/interes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "interesDto",
+        "Type": "BLH_BancaPersona_api.DTOs.InteresDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BLH_BancaPersona_api.Controllers.CuentaController",
+    "Method": "RealizarRetiro",
+    "RelativePath": "api/Cuenta/transaccion/retiro",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "transaccionDto",
+        "Type": "BLH_BancaPersona_api.DTOs.TransaccionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BLH_BancaPersona_api.Controllers.CuentaController",
+    "Method": "ObtenerTransacciones",
+    "RelativePath": "api/Cuenta/transacciones/{numeroCuenta}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numeroCuenta",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
